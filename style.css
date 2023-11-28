@@ -1,0 +1,126 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&family=Belanosima:wght@600&family=Bricolage+Grotesque&family=Dancing+Script:wght@700&family=Edu+TAS+Beginner:wght@600&family=Fraunces:wght@400;700&family=Freehand&family=Inter:wght@700&family=Lexend+Deca&family=Lobster&family=Manrope:wght@800&family=Merriweather:ital,wght@0,700;1,400;1,900&family=Montserrat:wght@400;500;600&family=Mooli&family=Outfit:wght@200;400;700&family=Playfair+Display:wght@600&family=Playfair:wght@600&family=Raleway:wght@400;500&family=Red+Hat+Display:wght@600;900&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&family=Belanosima:wght@600&family=Big+Shoulders+Display:wght@700&family=Bricolage+Grotesque&family=Dancing+Script:wght@700&family=Edu+TAS+Beginner:wght@600&family=Fraunces:wght@400;700&family=Freehand&family=Inter:wght@700&family=Lexend+Deca&family=Lobster&family=Manrope:wght@800&family=Merriweather:ital,wght@0,700;1,400;1,900&family=Montserrat:wght@400;500;600&family=Mooli&family=Outfit:wght@200;400;700&family=Playfair+Display:wght@600&family=Playfair:wght@600&family=Raleway:wght@400;500&family=Red+Hat+Display:wght@600;900&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 95%);
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem;
+  
+}
+.main .p img
+{
+  margin-bottom: 1.7rem;
+}
+h1
+{
+  color:hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1.3rem;
+}
+p
+{
+  color:hsla(0, 0%, 100%, 0.75);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+.p {
+  width: 17.3rem;
+  padding: 3rem;
+}
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+}
+.suv {
+  background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+button {
+  background-color: hsl(0, 0%, 95%);
+  border: none;
+  outline: none;
+  width:8rem;
+  height:2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+  transition: all 0.2s linear;
+  font-family: 'Lexend Deca', sans-serif;
+}
+.b1 {
+  color: hsl(31, 77%, 52%);
+}
+.b1:hover
+{
+  background-color:hsl(31, 77%, 52%); 
+  color: hsl(0, 0%, 95%);
+  cursor: pointer;
+  border: 3px solid  hsl(0, 0%, 95%);
+}
+.b2 {
+  color: hsl(184, 100%, 22%);
+}
+.b2:hover
+{
+  background-color:hsl(184, 100%, 22%); 
+  color: hsl(0, 0%, 95%);
+  cursor: pointer;
+  border: 3px solid  hsl(0, 0%, 95%);
+}
+.b3 {
+  color: hsl(179, 100%, 13%);
+}
+.b3:hover
+{
+  background-color:hsl(179, 100%, 13%); 
+  color: hsl(0, 0%, 95%);
+  cursor: pointer;
+  border: 3px solid  hsl(0, 0%, 95%);
+}
+@media (min-width: 980px) {
+  .sedan {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+  .luxury {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+}
+@media (max-width: 980px) {
+  .main {
+    flex-direction: column;
+  }
+  .sedan {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+  .luxury {
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+}
